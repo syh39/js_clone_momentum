@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Parisienne&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+body {
+    background-color: beige;
+}
+
+h1 {
+    color: cornflowerblue;
+    transition: color .5s ease-in-out;
+}
+
+.active {
+    color: tomato;
+}
+
+.hidden {
+    display: none;
+}
+
+#ask_name {
+    color: white;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+#ask_todo {
+    color: white;
+    font-size: 30px;
+    padding-top: 80px;
+}
+
+#login-form, #todo-form {
+    text-align: center;
+}
+
+#input_name,  #input_todo {
+    background: transparent;
+    font-size: 30px;
+    color: white;
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-bottom: 3px solid white;
+    caret-color: white;
+}
+
+
+#input_name:focus, #input_todo:focus {
+    outline: none;
+}
+
+#greeting {
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+#div_clock {
+    color: #ffffff;
+}
+
+#div_clock #clock {
+    /* position:absolute;
+    top: 2%; */
+    text-align: center;
+
+    font-size: 180px;
+    margin-top: 8%;
+
+    /* font-family: 'Parisienne', cursive; */
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+#div_clock #date {
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    font-size: 28px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#weather {
+    color: white;
+    position:absolute;
+    top: 5%;
+    left: 3%;
+    font-size: 17px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#weather #wicon {
+    width: 100px;
+    height: 100px;
+}
+
+.auto-jsCalendar {
+    position:absolute;
+    top: 5%;
+    right: 2%;
+    color: white;
+    background-color: hsla(180, 9%, 75%, 0.369);
+}
+
+#todo-form {
+    text-align: center;
+}
+
+#todo-list {
+    /* padding-top: 30px; */
+    text-align: center;
+    color: white;
+}
+
+#todo-list-done {
+    /* padding-top: 10px; */
+    text-align: center;
+    color: white;
+}
+
+#todo_p, #done_p {
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+}
+
+#todo-container {
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+    width: 400px;
+    max-height: 430px;
+    overflow-y: auto;
+    border-radius: 20px;
+    padding-top: 1px;
+    padding-bottom: 15px;
+    background-color: hsla(180, 2%, 10%, 0.369);
+}
+
+.todo_checkbox {
+    cursor: pointer;
+    border-radius: 20px;
+    /* opacity: 0; */
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: rgb(46, 123, 199)
+}
+
+input[type="checkbox"] {
+    accent-color: rgb(70, 73, 76);
+    border-radius: 10px;
+}
+
+.todo_span {
+    padding-left: 12px;
+    padding-right: 15px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.line-through {
+    color:rgb(208, 195, 195);
+    text-decoration: line-through;
+}
+
+#quote {
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+    bottom: 2%;
+    text-align: center;
+    color: white;
+}
+
+#quote_word {
+    font-size: 27px;
+    font-weight: 500;
+}
