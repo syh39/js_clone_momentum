@@ -1,5 +1,5 @@
 const clock = document.querySelector('h2#clock');
-const currentDate = document.querySelector('h2#date');
+// const currentDate = document.querySelector('h2#date');
 
 days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
@@ -14,9 +14,9 @@ const getClock = () => {
     const dateNum = String(date.getDate()).padStart(2, '0');
     const day = days[date.getDay()];
 
-    clock.innerText = `${hour}:${minute}`;
-    currentDate.innerText = `${year}.${month}.${dateNum} ${day}`
+    clock.innerText = `${hour}:${minute}:${second}`;
+    // currentDate.innerText = `${year}.${month}.${dateNum} ${day}`
 };
 
 getClock();
-setInterval(getClock, 1000)
+setInterval(getClock, 1000);
